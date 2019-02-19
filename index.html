@@ -7,33 +7,32 @@
         <link rel='stylesheet' href='styles.css' type='text/css'>
         <script src='Programcode.js'></script>
         
-        <!-- <style>
+       <!--  <style>
         body {
             background-image: url("images/canvasbackground.png");
         }
-        </style>
- -->
+        </style> -->
+
     </head>
     <body>
         <table>
 
-            <tr> <!--header row/5 columns-->
+        <!--<<tr>header row/5 columns
                 <td>Log In</td>
-                <td> | </td> <!--decorative pipe to separate text-->
+                <td> | </td> decorative pipe to separate text
                 <td>Create Account</td>
                 <td>Search</td>
                 <td>Shopping Cart</td>
-            </tr>
+            </tr> --> 
 
 
             <tr> <!--Logo image-->
-                <td><img src="images/AuthenticGraceBoutiqueLogoTRANSPARENT.png"></td>
+                <td><img src="images/AuthenticGraceBoutiqueLogoTRANSPARENT-EVENING.png"></td>
                 <td></td>
                 <td></td>
             </tr>
 
-            <tr> <!--Nav Bar 7 columns-->
-                <td>Shop</td> <!--add drop down menu for clothing types-->
+            <tr> <!--Nav Bar 6 columns-->
                 <td>New Arrivals </td>
                 <td>Petites </td>
                 <td>Trendsetter</td>
@@ -44,29 +43,45 @@
             </tr>
 
             <div class="custom-padding">
-                 <nav>
-                    <div class="logo">authentic grace<!-- <img src="images/AuthenticGraceBoutiqueLogoTRANSPARENT-LIGHT-GRAY.png"> --></div>
+                 <nav id="main-nav">
+                    <div class="logo">authentic grace boutique<!-- <img src="images/AuthenticGraceBoutiqueLogoTRANSPARENT-LIGHT-GRAY.png"> --></div>
                         <ul class="menu-area">
-                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Shop</a>
+                                <ul class="submenu">
+                                  <li>
+                                    <a href="#">Blouses</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Skirts</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Dresses</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Pants</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Jackets</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Intimates</a>
+                                  </li>
+                                </ul>
+                            </li>
+
                             <li><a href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Inspiration</a></li>
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="#">Create Account</a></li>
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Cart</a></li>
                         </ul>
                 </nav>
             </div>
 
-            <tr> <!--make this a drop down menu/ links to clothing types/ 6 columns-->
-                <td>Blouses</td>
-                <td>Skirts</td>
-                <td>Dresses</td> 
-                <td>Pants</td>
-                <td>Jackets</td>
-                <td>Intimates</td>
-            </tr>
-
-
              <tr>
-                <td colspan='7'>
+                <td colspan='6'>
                     <table width="100%">
                         <tr> <!--images of blouses in stock-->
                             <td><img src="images/stripedwhitelongsleeveblouse.jpeg" style="width:200px;"><p>the striped Lily in white</p><p>$24.99</p></td>
@@ -115,14 +130,35 @@
                 </td>
             </tr>
 
-            <tr> <!--contact us details and social media links/images-->
-                <td colspan='7'>Contact:<p>Authentic Grace Boutique</p><p>1 Penn Station Plaza</p><p>New York, NY 10021</p><p>212.427.1236</td>
-                <td>Social Media</td>
-            </tr>
+            
+                <tr> <!--contact us details and social media links/images-->
+                    <td colspan='6'>
+                        <table>
+                            <tr>
+                                <td>Contact:</td>
+                                <td>Social Media</td>
+                            </tr>
+                            <tr>
+                                <td><p>Authentic Grace Boutique</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>1 Penn Station Plaza</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>New York, NY 10021</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>212.427.1236</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                           
+                </tr>
 
-            <tr> <!--copyright info-->
-                <td colspan='7'>Copyright T&J 2019<p>All Rights Reserved</p></td>
-             </tr>
+                <tr> <!--copyright info-->
+                    <td colspan='6'>Copyright T&J 2019<p>All Rights Reserved</p></td>
+                 </tr>
+            </table>
         </table>
 
 

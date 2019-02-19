@@ -3,12 +3,24 @@
 #html 640065 is the color for the logo
 light gray logo is hex 
 a5a4a4*/
+
+Stormy #494e6b
+Cloud #98878F
+Sunset #985E6D
+Evening #192231
+
 */
 * {
             margin: 0;
             padding: 0;
             outline: 0;
             box-sizing: border-box;
+        }
+
+        body{
+            background-color: #98878F;
+
+
         }
         /*body {
             background-image: url();
@@ -34,7 +46,7 @@ a5a4a4*/
             width: calc(100% - 60px);
             margin: 0 auto;
             padding: 10px 0;
-            background: #640065;
+            background: #192231;
             z-index: 1;
             text-align: right;
             padding-right: 2%;ß
@@ -44,7 +56,7 @@ a5a4a4*/
             width: 15%;
             float: left;
             text-transform: uppercase;
-            color: #fff;
+            color: /*#fff*/#985E6D;
             font-size: 25px;
             text-align: left;
             padding-left: 2%;
@@ -55,7 +67,7 @@ a5a4a4*/
         }
 
         .menu-area a {
-            color: #fff;
+            color: #985E6D;
             font-weight: 300;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -66,16 +78,17 @@ a5a4a4*/
             position: relative;
             z-index: 1;
         }
+
         .menu-area a:hover {
-            background: #a5a4a4;
-            color: #fff;
+            background: /*#a5a4a4*/#494e6b;
+            color: #985E6D;
         }
 
         .menu-area a:hover:after {
             transform: translateY(-50%) rotate(-35deg);
         }
 
-        nav:before {
+        /*nav:before {
             position: absolute;
             content: '';
             border-top: 10px solid #333;
@@ -96,7 +109,48 @@ a5a4a4*/
             top: 100%;
             right: 0;
         }
+*/
 
+
+        .submenu li {
+          display: none;
+          position: absolute;
+          top: 0px;
+        }
+
+
+        .submenu {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          width: 100%;
+        }
+
+        .submenu li {
+          position: relative;
+        }
+
+        .submenu li:hover {
+          display: block;
+        }
+
+
+        #main-nav ul {
+          list-style: none;
+          display: flex;
+        }
+
+        #main-nav li {
+          width: 100%;
+          text-align: center;
+          position: relative;
+        }
+
+        #main-nav li:hover .submenu > li {
+          display: block;
+          flex-direction: column;
+          top: 0px;
+        }
 
 /* ignore the code below */
 
